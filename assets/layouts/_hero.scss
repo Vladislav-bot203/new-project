@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Allura";
+    src: url("./fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+
+@mixin MontserratAS {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+@mixin Allura() {
+    font-family: "Allura", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+}
+
+@mixin MontserratHD1 {
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+
+.hero {
+    background-color: $color-primary;
+    background-image: url("./images/snow.png"),
+        url("./images/ball.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.hero__wrapper {
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__header {
+    @include MontserratHD1();
+    color: $color-static-white;
+    margin-block-start: 12px;
+    margin-block-end: 12px;
+}
+
+.explore__button {
+    padding: 20px 32px;
+    border-radius: 20px;
+    background-color: $color-dark;
+    color: $color-static-white;
+    @include MontserratAS();
+    margin-top: 12px
+}
+
+.caption {
+    @include Allura();
+    margin-top: 12px;
+    margin-bottom: 0px;
+    color: $color-static-white;
+}
+
+

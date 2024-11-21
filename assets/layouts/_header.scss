@@ -1,0 +1,62 @@
+@mixin MontserratAS() {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-dark;
+}
+
+.header {
+    background-color: $color-static-white;
+    height: $header-height;
+    padding: 0 8px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    width: 141px;
+    height: 40px;
+    padding: 8px 20px;
+    gap: 8px;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo__text {
+    @include MontserratAS();
+}
+
+.header__navigation {
+    display: flex;
+    gap: 8px;
+}
+
+.navigation__link {
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    @include MontserratAS();
+    
+    &:hover {
+        background-color: $color-nav-hover-bacg;
+        color: $color-primary;
+    }
+}
+
+img {
+    height: 24px;
+    width: 24px;
+}
