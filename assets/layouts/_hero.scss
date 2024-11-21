@@ -31,7 +31,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 150%;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
 }
 
@@ -51,19 +51,21 @@
 }
 
 .hero__wrapper {
-    padding: 60px;
+    padding: 60px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 430px;
+    gap: 12px;
 }
 
 .hero__header {
     @include MontserratHD1();
     color: $color-static-white;
-    margin-block-start: 12px;
-    margin-block-end: 12px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .explore__button {
@@ -72,12 +74,19 @@
     background-color: $color-dark;
     color: $color-static-white;
     @include MontserratAS();
-    margin-top: 12px
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &:hover {
+        background-color: $color-static-white;
+        color: $color-dark;
+        cursor: pointer;
+    }
 }
 
 .caption {
     @include Allura();
-    margin-top: 12px;
+    margin-top: 0;
     margin-bottom: 0px;
     color: $color-static-white;
 }

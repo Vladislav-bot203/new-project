@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@mixin MontserratHD2() {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+@mixin MontserratPar() {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 148%;
+}
+
+
+.about {
+    background-color: $color-primary;
+    background-image: url("./images/snow.png");
+    background-size: cover;
+    padding: 60px 8px;
+}
+
+.wrapper {
+    border-radius: 20px;
+    background-color: $color-static-white;
+    display: flex;
+    flex-direction: row;
+}
+
+.about__content {
+    flex: 1;
+}
+
+.about__info {
+    max-width: 426px;
+    padding: 160px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.about__header {
+    @include MontserratHD2();
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.caption__about {
+    @include Allura();
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $color-primary;
+}
+
+.about__text {
+    @include MontserratPar();
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about__image {
+    flex: 1;
+    background-image: url("./images/Santa.png");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

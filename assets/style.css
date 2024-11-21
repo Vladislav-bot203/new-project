@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -95,12 +100,14 @@ img {
 }
 
 .hero__wrapper {
-  padding: 60px;
+  padding: 60px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 430px;
+  gap: 12px;
 }
 
 .hero__header {
@@ -108,11 +115,13 @@ img {
   font-size: 32px;
   font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0.17em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-block-start: 12px;
-  margin-block-end: 12px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 .explore__button {
@@ -126,7 +135,13 @@ img {
   line-height: 130%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.explore__button:hover {
+  background-color: #FFFFFF;
+  color: #181C28;
+  cursor: pointer;
 }
 
 .caption {
@@ -135,9 +150,82 @@ img {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0.05em;
-  margin-top: 12px;
+  margin-top: 0;
   margin-bottom: 0px;
   color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+.about {
+  background-color: #FA4949;
+  background-image: url("./images/snow.png");
+  background-size: cover;
+  padding: 60px 8px;
+}
+
+.wrapper {
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.about__info {
+  max-width: 426px;
+  padding: 160px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__header {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.caption__about {
+  font-family: "Allura", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #FA4949;
+}
+
+.about__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about__image {
+  flex: 1;
+  background-image: url("./images/Santa.png");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .wrapper {
