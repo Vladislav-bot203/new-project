@@ -1,0 +1,132 @@
+@mixin MontserratSL() {
+    font-family: "Montserrat";
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.slider {
+    background-color: $color-primary;
+    padding: 60px 8px;
+    overflow-x: hidden;
+    background-image: url("./images/snow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper__slider__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slider__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slider__caption {
+    @include Allura();
+    color: $color-static-white;
+    text-align: center;
+}
+
+.slider__header {
+    @include MontserratHD2();
+    color: $color-static-white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.wrapper_slider {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.slider__text {
+    @include MontserratSL();
+    color: $color-static-white;
+}
+
+.slider__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.snowman {
+    background-image: url("./images/snowman.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.presents {
+    background-image: url("./images/christmastrees.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ball {
+    background-image: url("./images/christmastreeball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fairy-tail {
+    background-image: url("./images/fairytail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider__buttons {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+    &>* {
+        width: 56px;
+        height: 56px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid $color-static-white;
+    }
+}
+
+.left {
+    border: 1px solid rgb(255, 255, 255, 40%);
+}
+
+.right:hover {
+    background-color: $color-static-white;
+    cursor: pointer;
+
+    .arrow-right {
+        filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
+        brightness(103%) contrast(104%);
+    }
+}
+
+.slider__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left, .arrow-right {
+    width: 24px;
+    height: 24px;
+}
