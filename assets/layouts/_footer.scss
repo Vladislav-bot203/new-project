@@ -1,0 +1,111 @@
+@mixin MontserratAL() {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: $color-static-white;
+  padding: 60px 8px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer__cards__container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 60px;
+  justify-content: center;
+}
+
+.footer__card {
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+  color: $color-dark;
+  flex: 1;
+
+  &:hover {
+    cursor: pointer;
+
+    .footer__card__type {
+      color: $color-primary;
+    }
+
+    .footer__card__name {
+      color: $color-primary;
+    }
+  }
+}
+
+.footer__card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 12px;
+  background-color: $color-content-background;
+}
+
+.footer__img {
+  width: 80px;
+  height: 80px;
+}
+
+.footer__card__type {
+  @include MontserratAL();
+  color: $color-dark;
+}
+
+.footer__card__name {
+  @include MontserratHD3();
+  color: $color-dark;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.socials__container {
+  display: flex;
+  gap: 12px;
+}
+
+.socials__item {
+  padding: 8px;
+  display: block;
+  &:hover {
+    cursor: pointer;
+    .socials__icon {
+      filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg)
+        brightness(103%) contrast(104%);
+    }
+  }
+}
+
+.rights {
+  @include MontserratPar();
+  color: $color-dark;
+}
+
+.page__author {
+  @include Allura();
+  color: $color-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

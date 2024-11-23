@@ -22,9 +22,9 @@
         </a>
         <nav class="header__navigation">
           <a class="navigation__link" href="#">gifts</a>
-          <a class="navigation__link" href="#">about</a>
-          <a class="navigation__link" href="#">best</a>
-          <a class="navigation__link" href="#">contacts</a>
+          <a class="navigation__link" href="#about">about</a>
+          <a class="navigation__link" href="#best">best</a>
+          <a class="navigation__link" href="#contacts">contacts</a>
         </nav>
       </div>
     </header>
@@ -38,7 +38,7 @@
         <p class="caption">and Happy New Year</p>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="wrapper wrapper_about">
         <div class="about__content">
           <div class="about__info">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="best-gifts">
+    <section id="best" class="best-gifts">
       <div class="wrapper best-gifts__wrapper">
         <div class="best-gifts__info">
           <p class="best-gifts__caption">Best Gifts</p>
@@ -176,5 +176,53 @@
         </div>
       </div>
     </section>
+    <footer id="contacts" class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__cards__container">
+          <a class="footer__card card_number" href="tel:+375291112233">
+            <div class="footer__card__container">
+              <img
+                class="footer__img"
+                src="./assets/images/santa-claus.png"
+                alt="Santa"
+              />
+              <p class="footer__card__type">+375 (29) 111-22-33</p>
+              <h3 class="footer__card__name">call us</h3>
+            </div>
+          </a>
+          <a
+            class="footer__card card_placement"
+            target="_blank"
+            href="https://www.google.com/maps/place/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/@-75.05435,0,3z/data=!3m1!4b1!4m10!1m2!2m1!1z0JDQvdGC0LDRgNC60YLQuNC00LA!3m6!1s0xa4b9967b3390754b:0x6e52be1f740f2075!8m2!3d-75.250973!4d-0.071389!15sChTQkNC90YLQsNGA0LrRgtC40LTQsJIBB2NvdW50cnngAQA!16s%2Fm%2F06wc8yw?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"
+          >
+            <div class="footer__card__container">
+              <img
+                class="footer__img"
+                src="./assets/images/christmas-tree.png"
+              />
+              <p class="footer__card__type">magic forest</p>
+              <h3 class="footer__card__name">meet us</h3>
+            </div>
+          </a>
+          <a class="footer__card card_mail" href="mailto:gifts@magic.com">
+            <div class="footer__card__container">
+              <img class="footer__img" src="./assets/images/snake.png" />
+              <p class="footer__card__type">gifts@magic.com</p>
+              <h3 class="footer__card__name">write us</h3>
+            </div>
+          </a>
+        </div>
+        <div class="footer__info">
+          <div class="socials__container">
+            <a class="socials__item telegram"><img class="socials__icon" src="./assets/images/telegram.svg" alt="telegram"/></a>
+            <a class="socials__item facebook"><img class="socials__icon" src="./assets/images/facebook.svg" alt="facebook"/></a>
+            <a class="socials__item instagram"><img class="socials__icon" src="./assets/images/instagram.svg" alt="instagram"/></a>
+            <a class="socials__item x"><img class="socials__icon" src="./assets/images/X.svg" alt="x"/></a>
+          </div>
+          <p class="rights">© Copyright 2025, All Rights Reserved</p>
+          <a class="page__author" href="#">Made in Rolling Scopes School</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -612,6 +612,121 @@ img {
   text-transform: uppercase;
 }
 
+.footer {
+  background-color: #FFFFFF;
+  padding: 60px 8px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer__cards__container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 60px;
+  justify-content: center;
+}
+
+.footer__card {
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #181C28;
+  flex: 1;
+}
+.footer__card:hover {
+  cursor: pointer;
+}
+.footer__card:hover .footer__card__type {
+  color: #FA4949;
+}
+.footer__card:hover .footer__card__name {
+  color: #FA4949;
+}
+
+.footer__card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 12px;
+  background-color: #ECF3F8;
+}
+
+.footer__img {
+  width: 80px;
+  height: 80px;
+}
+
+.footer__card__type {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #181C28;
+}
+
+.footer__card__name {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #181C28;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.socials__container {
+  display: flex;
+  gap: 12px;
+}
+
+.socials__item {
+  padding: 8px;
+  display: block;
+}
+.socials__item:hover {
+  cursor: pointer;
+}
+.socials__item:hover .socials__icon {
+  filter: invert(43%) sepia(12%) saturate(4473%) hue-rotate(323deg) brightness(103%) contrast(104%);
+}
+
+.rights {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 148%;
+  color: #181C28;
+}
+
+.page__author {
+  font-family: "Allura", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #181C28;
+  text-decoration: none;
+}
+.page__author:hover {
+  color: #FA4949;
+}
+
 .wrapper {
   max-width: 1276px;
   margin: 0 auto;
