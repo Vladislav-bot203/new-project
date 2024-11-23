@@ -53,6 +53,8 @@
 .best-gifts__cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
 }
 

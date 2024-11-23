@@ -118,8 +118,10 @@ img {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 .explore__button {
@@ -409,6 +411,8 @@ img {
 .best-gifts__cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
 }
 
