@@ -541,6 +541,7 @@ img {
 
 .explore__button {
   border: 0px;
+  text-decoration: none;
 }
 
 .timer__container {
@@ -626,6 +627,7 @@ img {
 .footer__cards__container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
   border-radius: 60px;
   justify-content: center;
@@ -637,6 +639,7 @@ img {
   text-decoration: none;
   color: #181C28;
   flex: 1;
+  flex-shrink: 1;
 }
 .footer__card:hover {
   cursor: pointer;
@@ -725,6 +728,74 @@ img {
 }
 .page__author:hover {
   color: #FA4949;
+}
+
+.best-gifts__page {
+  background-color: #FA4949;
+  border-radius: 20px;
+  background-image: url("./images/garland.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 60px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.best-gifts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifts-page__header {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 426px;
+  text-align: center;
+}
+
+.gifts__navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.gifts__navigation__item {
+  border-radius: 12px;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.gifts__navigation__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.active {
+  background-color: rgba(250, 73, 73, 0.1);
+  color: #FA4949;
+  pointer-events: none;
+  cursor: default;
+}
+
+.active__item {
+  background-color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  cursor: default;
 }
 
 .wrapper {

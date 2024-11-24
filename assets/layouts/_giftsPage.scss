@@ -1,0 +1,57 @@
+.best-gifts__page {
+    background-color: $color-primary;
+    border-radius: 20px;
+    background-image: url("./images/garland.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 60px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.best-gifts__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gifts-page__header {
+    @include MontserratHD1();
+    color: $color-static-white;
+    max-width: 426px;
+    text-align: center;
+}
+
+.gifts__navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.gifts__navigation__item {
+    border-radius: 12px;
+    padding: 12px 20px;
+    text-decoration: none;
+    @include MontserratAS();
+    color: $color-static-white;
+
+    &:hover {
+        background-color: rgb(255, 255, 255, 20%);
+    }
+}
+.active {
+    background-color: rgb(250,73,73, 10%);
+    color: $color-primary;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .active__item {
+    background-color: rgb(255, 255, 255, 20%);
+    pointer-events: none;
+    cursor: default;
+  }
