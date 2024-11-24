@@ -60,3 +60,24 @@ img {
     height: 24px;
     width: 24px;
 }
+.burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    justify-self: flex-end;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width : 768px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}

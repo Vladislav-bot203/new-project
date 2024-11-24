@@ -78,6 +78,25 @@ img {
   width: 24px;
 }
 
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  justify-self: flex-end;
+}
+.burger:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
 @font-face {
   font-family: "Allura";
   src: url("./fonts/Allura-Regular.ttf");
@@ -166,7 +185,7 @@ img {
   padding: 60px 8px;
 }
 
-.wrapper_about {
+.wrapper__about {
   border-radius: 20px;
   background-color: #FFFFFF;
   display: flex;
@@ -174,12 +193,14 @@ img {
 }
 
 .about__content {
+  display: flex;
+  align-items: center;
   flex: 1;
 }
 
 .about__info {
+  padding: 60px 60px;
   max-width: 426px;
-  padding: 160px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,11 +244,30 @@ img {
   flex: 1;
   background-image: url("./images/Santa.png");
   border-radius: 20px;
+  height: 528px;
+  width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media (max-width: 650px) {
+  .wrapper__about {
+    flex-direction: column;
+  }
+  .about__content {
+    padding: 0 20px;
+    flex: auto;
+  }
+  .about__info {
+    padding: 60px 0;
+    gap: 20px;
+  }
+  .about__image {
+    width: 100%;
+    flex: auto;
+  }
+}
 .slider {
   background-color: #FA4949;
   padding: 60px 8px;
@@ -573,6 +613,7 @@ img {
   flex-direction: column;
   flex: 1;
   align-items: center;
+  justify-content: center;
   width: 80px;
 }
 
@@ -587,6 +628,7 @@ img {
   text-align: left;
   display: flex;
   width: 100%;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -730,12 +772,17 @@ img {
   color: #FA4949;
 }
 
+@media (max-width: 1050px) {
+  .footer__cards__container {
+    flex-direction: column;
+  }
+}
 .best-gifts__page {
   background-color: #FA4949;
   border-radius: 20px;
   background-image: url("./images/garland.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: contain;
   padding: 60px 8px;
   display: flex;
   justify-content: center;

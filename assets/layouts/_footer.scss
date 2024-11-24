@@ -112,3 +112,8 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .footer__cards__container {
+    flex-direction: column;
+  }
+}
